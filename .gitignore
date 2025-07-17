@@ -1,0 +1,95 @@
+# -----------------------------------------------------------------------------
+# Go build artifacts
+# -----------------------------------------------------------------------------
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+/build/
+/bin/
+/dist/
+
+# Coverage
+*.coverprofile
+coverage.out
+
+# Dependency cache (leave go.mod and go.sum!)
+# Uncomment only if using vendoring
+# vendor/
+
+# -----------------------------------------------------------------------------
+# JetBrains GoLand / IntelliJ
+# -----------------------------------------------------------------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# -----------------------------------------------------------------------------
+# System & Editor Files
+# -----------------------------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.tmp
+*.log
+
+# -----------------------------------------------------------------------------
+# Environment / Secrets
+# -----------------------------------------------------------------------------
+.env
+.env.*
+config.local.yml
+secrets.yml
+*.key
+*.pem
+
+# -----------------------------------------------------------------------------
+# Docker
+# -----------------------------------------------------------------------------
+# Ignore docker-compose override files or local dev overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker build cache or artifacts (if output outside .dockerignore)
+docker-cache/
+*.tar
+*.img
+
+# -----------------------------------------------------------------------------
+# Kubernetes
+# -----------------------------------------------------------------------------
+# Ignore generated manifests, local K8s overrides, or Helm output
+k8s/tmp/
+k8s/generated/
+*.yaml.backup
+*.yaml.tmp
+*.yaml.bak
+
+# Helm
+*.tgz
+charts/
+templates/
+values.local.yaml
+helm-configs/
+
+# -----------------------------------------------------------------------------
+# CI/CD
+# -----------------------------------------------------------------------------
+# GitHub Actions, GitLab CI, Jenkins temp output, etc.
+ci-output/
+.pipeline/
+*.ci.tmp
+*.ci.log
+*.cache
+
+# -----------------------------------------------------------------------------
+# Local output or download folders
+# -----------------------------------------------------------------------------
+stream-download/
+
