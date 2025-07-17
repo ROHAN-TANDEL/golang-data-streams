@@ -1,0 +1,16 @@
+server:
+  port: "8080"
+
+app:
+  name: "download"
+  environment: "development"
+  log_level: "debug"
+
+# following mssql is replaced with .env
+mssql:
+  connString: "sqlserver://username:mypassword@localhost:1433?database=my_database"
+
+redis:
+  addr: "localhost:6379"
+  password: ""
+  db: 0
