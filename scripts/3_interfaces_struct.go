@@ -43,4 +43,14 @@ func main() {
 	fmt.Println("Interface Example:")
 	fmt.Println(c.Speak())
 	fmt.Println("Type of s:", reflect.TypeOf(c))
+
+	var sr, cr Speaker
+	sr, cr = Dog{Name: "Max"}, Cat{Name: "Whiskers"}
+	fmt.Println("Interface Example:")
+	fmt.Println(sr.Speak())
+	fmt.Println("Type of s:", reflect.TypeOf(sr))
+
+	fmt.Println("Interface Example:")
+	fmt.Println(cr.Speak())
+	fmt.Println("Type of s:", reflect.TypeOf(cr))
 }
